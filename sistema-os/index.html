@@ -12,11 +12,19 @@
     <h2>Cadastrar ordem de serviço</h2>
 
     <p>Nome do cliente</p>
+    <input type="text" id= "cliente" placeholder="Digite o nome do cliente">
 
     <p>Descrição do serviço</p>
+    <input type="text" id="descriçao" placeholder="Digite o serviço">
 
     <p>Nome do técnico</p>
+    <input type="text" id="tecnico" placeholder="Digite o nome do técnico"><br>
 
-    <button>Cadastrar</button>
+    <br> <br>
+    <button onclick="cadastrar()">Cadastrar</button>
+    <h2>Ordens cadastradas</h2>
+    <p id="resultado"></p>
+
+    <script src="script.js"></script>
 </body>
 </html>
