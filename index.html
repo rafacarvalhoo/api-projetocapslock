@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CapsLock - Login</title>
+
+    <link rel="stylesheet" href="./login.css">
+</head>
+
+<body class="pagina-login">
+
+    <main class="login-caixa">
+
+        <h1 class="logo">CapsLock<span>♡</span></h1>
+
+        <h2>Bem-vindo de volta!</h2>
+
+        <form onsubmit="entrar(event)">
+
+            <div class="campo-login">
+                <span>👤</span>
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Usuário / e-mail"
+                    required
+                >
+            </div>
+
+            <div class="campo-login">
+                <span>🔒</span>
+                <input
+                    type="password"
+                    id="senha"
+                    placeholder="Senha"
+                    required
+                >
+            </div>
+
+            <button class="botao" type="submit">Entrar</button>
+
+            <a href="#" onclick="alert('A recuperação de senha será implementada depois.')">
+                Esqueceu sua senha?
+            </a>
+
+        </form>
+
+        <p id="mensagem" class="mensagem"></p>
+
+    </main>
+
+    <script src="../../script.js"></script>
+
+    <script src="script.js"></script>
+
+    <script>
+    consultarOrdens();
+    </script>
+
+
+</body>
+</html>
