@@ -27,20 +27,15 @@ async function cadastrar() {
         let mensagem = await resposta.text();
 
         if (resposta.ok) {
-            document.getElementById("resultado").innerHTML +=
-                "Cliente: " + cliente +
-                "<br>Serviço: " + descricao +
-                "<br>Técnico: " + tecnico +
-                "<br><br>";
+        await consultarOrdens();
 
             document.getElementById("cliente").value = "";
             document.getElementById("descricao").value = "";
             document.getElementById("tecnico").value = "";
 
             alert(mensagem);
-        } else {
-            alert(mensagem);
-        }
+        } 
+        
     } catch (erro) {
         alert("Não foi possível conectar ao servidor!");
     }
