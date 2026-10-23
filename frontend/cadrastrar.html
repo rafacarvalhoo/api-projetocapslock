@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Ordens de Serviço</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="topo">
+        <h1 class="logo">CapsLock ♡</h1>
+        <p>Sistema de Ordens de Serviço</p>
+    </header>
+
+    <main class="conteudo">
+
+        <h2>Cadastrar ordem de serviço</h2>
+        <p class="descricao">Preencha os dados para cadastrar uma nova ordem de serviço.</p>
+
+        <section class="caixa">
+
+            <form onsubmit="cadastrar(event)">
+
+                <p class="nome-campo">Nome do cliente</p>
+                <input type="text" id="cliente" placeholder="Digite o nome do cliente" required>
+
+                <p class="nome-campo">Descrição do serviço</p>
+                <input type="text" id="descricao" placeholder="Digite a descrição do serviço" required>
+
+                <p class="nome-campo">Nome do técnico</p>
+                <input type="text" id="tecnico" placeholder="Digite o nome do técnico" required>
+
+                <br><br>
+
+                <button type="submit" class="botao">Cadastrar</button>
+
+            </form>
+
+        </section>
+
+        <section class="caixa">
+            <h2>Ordens cadastradas</h2>
+            <p id="resultado"></p>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
