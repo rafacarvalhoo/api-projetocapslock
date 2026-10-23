@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CapsLock - Cadastrar OS</title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<header class="topo"><a class="logo" href="../dashboard/index.html">CapsLock<span>♡</span></a><span class="usuario">Usuário</span></header>
+<nav class="menu">
+<a href="../dashboard/index.html">Início</a><a class="ativo" href="../cadastro-os/index.html">Cadastrar OS</a><a href="../consulta-os/index.html">Consultar OS</a><a href="../detalhes-os/index.html">Detalhes da OS</a><a href="../tecnicos/index.html">Técnicos</a><a href="../cliente/index.html">Área do cliente</a><a href="../suporte/index.html">Suporte</a><a href="../login/index.html">Sair</a>
+</nav>
+<main class="conteudo">
+<p class="subtitulo">GERENCIAMENTO</p><h1>Cadastrar ordem de serviço</h1><p class="descricao">Preencha os campos para registrar uma nova ordem de serviço.</p>
+<section class="caixa"><h2>Dados da solicitação</h2>
+<form id="form-os" onsubmit="cadastrarOS(event)">
+<div class="form-grid">
+<div><p class="nome-campo">Nome do cliente</p><input id="cliente" type="text" placeholder="Digite o nome do cliente" required></div>
+<div><p class="nome-campo">Telefone do cliente</p><input id="telefone" type="tel" placeholder="(00) 00000-0000"></div>
+<div><p class="nome-campo">Equipamento</p><input id="equipamento" type="text" placeholder="Ex.: Notebook" required></div>
+<div><p class="nome-campo">Técnico responsável</p><select id="tecnico"><option value="">Selecione um técnico</option><option>João Santos</option><option>Mariana Alves</option><option>Rafael Lima</option></select></div>
+<div><p class="nome-campo">Data de abertura</p><input id="data" type="date" required></div>
+<div><p class="nome-campo">Status</p><select id="status"><option>Aberta</option><option>Em andamento</option><option>Concluída</option><option>Cancelada</option></select></div>
+<div class="campo-grande"><p class="nome-campo">Descrição do problema</p><textarea id="descricao" rows="4" placeholder="Descreva o problema do equipamento..." required></textarea></div>
+</div>
+<div class="botoes"><button class="botao" type="submit">Cadastrar OS</button><button class="botao botao-claro" type="reset">Limpar campos</button><a class="botao botao-claro" href="../dashboard/index.html">Voltar</a></div>
+</form><p id="mensagem-os" class="mensagem"></p></section>
+<footer class="rodape">CapsLock © 2026 — Sistema de Ordem de Serviço</footer></main>
+<script src="../../script.js"></script>
+</body>
+</html>
